@@ -3,17 +3,30 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: String | IdiotLB&#39;s Blog</title>
+  <title>扩展KMP | IdiotLB&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="IdiotLB's Blog">
-<meta property="og:url" content="http://yoursite.com/tags/String/index.html">
+  <meta name="description" content="来源: http://www.cppblog.com/MatoNo1/archive/2011/04/17/144390.aspx
+
+拓展KMP　　拓展KMP是用来求两个串(设为A串B串)中，A串的每一位开始，最多能与B串从前缀开始匹配多少位。
+
+　　　　设f[i]为A从第i位开始最多能匹配f[i]位的B前缀，next[i]为B从第i位开始最多能匹配next[i]位的B的前缀。　　　　假设现在匹配">
+<meta property="og:type" content="article">
+<meta property="og:title" content="扩展KMP">
+<meta property="og:url" content="http://yoursite.com/2015/12/19/扩展KMP/index.html">
 <meta property="og:site_name" content="IdiotLB's Blog">
-<meta property="og:description">
+<meta property="og:description" content="来源: http://www.cppblog.com/MatoNo1/archive/2011/04/17/144390.aspx
+
+拓展KMP　　拓展KMP是用来求两个串(设为A串B串)中，A串的每一位开始，最多能与B串从前缀开始匹配多少位。
+
+　　　　设f[i]为A从第i位开始最多能匹配f[i]位的B前缀，next[i]为B从第i位开始最多能匹配next[i]位的B的前缀。　　　　假设现在匹配">
+<meta property="og:updated_time" content="2015-12-19T12:09:29.754Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="IdiotLB's Blog">
-<meta name="twitter:description">
+<meta name="twitter:title" content="扩展KMP">
+<meta name="twitter:description" content="来源: http://www.cppblog.com/MatoNo1/archive/2011/04/17/144390.aspx
+
+拓展KMP　　拓展KMP是用来求两个串(设为A串B串)中，A串的每一位开始，最多能与B串从前缀开始匹配多少位。
+
+　　　　设f[i]为A从第i位开始最多能匹配f[i]位的B前缀，next[i]为B从第i位开始最多能匹配next[i]位的B的前缀。　　　　假设现在匹配">
   
     <link rel="alternative" href="/atom.xml" title="IdiotLB&#39;s Blog" type="application/atom+xml">
   
@@ -152,84 +165,110 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-扩展KMP" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/12/19/扩展KMP/" class="archive-article-date">
-  	<time datetime="2015-12-19T12:06:47.000Z" itemprop="datePublished">12月 19</time>
+    <div class="article-meta">
+      <a href="/2015/12/19/扩展KMP/" class="article-date">
+  	<time datetime="2015-12-19T12:06:47.000Z" itemprop="datePublished">2015-12-19</time>
 </a>
-        </div>
-    	 
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/12/19/扩展KMP/">扩展KMP</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      扩展KMP
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 	<div class="article-tag tagcloud">
 		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/String/">String</a></li></ul>
 	</div>
 
-          
+        
 
-        </div>
         <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
+      </div>
+      
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/12/17/字符串最小表示法/" class="archive-article-date">
-  	<time datetime="2015-12-17T09:47:28.000Z" itemprop="datePublished">12月 17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/12/17/字符串最小表示法/">字符串最小表示法</a>
-    </h1>
-  
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>来源: <a href="http://www.cppblog.com/MatoNo1/archive/2011/04/17/144390.aspx" target="_blank" rel="external">http://www.cppblog.com/MatoNo1/archive/2011/04/17/144390.aspx</a></strong></p>
+<hr>
+<h1 id="u62D3_u5C55KMP"><a href="#u62D3_u5C55KMP" class="headerlink" title="拓展KMP"></a>拓展KMP</h1><p>　　拓展KMP是用来求两个串(设为A串B串)中，A串的每一位开始，最多能与B串从前缀开始匹配多少位。</p>
+<hr>
+<p>　　<br>　　设f[i]为A从第i位开始最多能匹配f[i]位的B前缀，next[i]为B从第i位开始最多能匹配next[i]位的B的前缀。<br>　　<br>　　假设现在匹配到第i位，在k时匹配到最远(即k + ex[k] - 1最大时),设p为这个最远的距离(即p = k + ex[k] - 1)。<br>　　<br>A[k..p] = B[1..p - k + 1]<br>$\Rightarrow$ A[i..p] = B[i - k + 1..p - k + 1]</p>
+<p>按next[i - k + 1]分类讨论(设next[i - k + 1] = L)<br><strong>1° L &lt;= p - k + 1时</strong><br>B[1..L] = B[i - k + 1..i - k + L] = A[i..i + L - 1]<br>因为next的定义，A不可能再匹配更多的B，即f[i]=L</p>
+<p><strong>2° L &gt; p - k + 1时</strong><br>A[i..p] = B[1..p - i + 1]<br>即可以从A[p]开始与B[p - i + 1]匹配。</p>
+<p><strong>注意：p有可能小于i，根据p的定义，此时k = i - 1, p = i - 2，则从i开始匹配即可。</strong></p>
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/String/">String</a></li></ul>
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/12/17/字符串最小表示法/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">字符串最小表示法</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
 	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
 
-    
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="扩展KMP" data-title="扩展KMP" data-url="http://yoursite.com/2015/12/19/扩展KMP/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"IdiotLB"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
 
 </div>
       <footer id="footer">
@@ -255,9 +294,9 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false
 	}
