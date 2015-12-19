@@ -184,7 +184,7 @@
 <hr>
 <h1 id="u62D3_u5C55KMP"><a href="#u62D3_u5C55KMP" class="headerlink" title="拓展KMP"></a>拓展KMP</h1><p>　　拓展KMP是用来求两个串(设为A串B串)中，A串的每一位开始，最多能与B串从前缀开始匹配多少位。</p>
 <hr>
-<p>　　<br>　　设f[i]为A从第i位开始最多能匹配f[i]位的B前缀，next[i]为B从第i位开始最多能匹配next[i]位的B的前缀。<br>　　<br>　　假设现在匹配到第i位，在k时匹配到最远(即k + ex[k] - 1最大时),设p为这个最远的距离(即p = k + ex[k] - 1)。<br>　　<br>A[k..p] = B[1..p - k + 1]<br>$\Rightarrow$ A[i..p] = B[i - k + 1..p - k + 1]</p>
+<p>　　<br>设f[i]为A从第i位开始最多能匹配f[i]位的B前缀，next[i]为B从第i位开始最多能匹配next[i]位的B的前缀。<br>　　<br>假设现在匹配到第i位，在k时匹配到最远(即k + ex[k] - 1最大时),设p为这个最远的距离(即p = k + ex[k] - 1)。<br>　　<br>A[k..p] = B[1..p - k + 1]<br>$\Rightarrow$ A[i..p] = B[i - k + 1..p - k + 1]</p>
 <p>按next[i - k + 1]分类讨论(设next[i - k + 1] = L)<br><strong>1° L &lt;= p - k + 1时</strong><br>B[1..L] = B[i - k + 1..i - k + L] = A[i..i + L - 1]<br>因为next的定义，A不可能再匹配更多的B，即f[i]=L</p>
 <p><strong>2° L &gt; p - k + 1时</strong><br>A[i..p] = B[1..p - i + 1]<br>即可以从A[p]开始与B[p - i + 1]匹配。</p>
 <p><strong>注意：p有可能小于i，根据p的定义，此时k = i - 1, p = i - 2，则从i开始匹配即可。</strong></p>
