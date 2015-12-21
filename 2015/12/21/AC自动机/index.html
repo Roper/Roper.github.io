@@ -7,26 +7,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="AC自动机&quot;&amp;gt;AC自动机
 　　AC自动机是用来求一个串中出现了多少个模式串的算法。
-
 fail数组&quot;&amp;gt;fail数组　　类比KMP中的next数组，即在Trie上，i点向上与fail[i]到根节点之前组成的字符串长度相同组成的字符串相等。
-算法实现&quot;&amp;gt;算法实现　　步骤为：按照模式串建立一个Trie树，Trie上的每一个结点有一个fail值，将所求串在Trie上比对。　　　　建立Trie树　　在每个模">
+算法实现&quot;&amp;gt;算法实现　　步骤为：按照模式串建立一个Trie树，Trie上的每一个结点有一个fail值，将所求串在Trie上比对。　　　　建立Trie树　　在每个模式">
 <meta property="og:type" content="article">
 <meta property="og:title" content="AC自动机">
 <meta property="og:url" content="http://yoursite.com/2015/12/21/AC自动机/index.html">
 <meta property="og:site_name" content="IdiotLB's Blog">
 <meta property="og:description" content="AC自动机&quot;&amp;gt;AC自动机
 　　AC自动机是用来求一个串中出现了多少个模式串的算法。
-
 fail数组&quot;&amp;gt;fail数组　　类比KMP中的next数组，即在Trie上，i点向上与fail[i]到根节点之前组成的字符串长度相同组成的字符串相等。
-算法实现&quot;&amp;gt;算法实现　　步骤为：按照模式串建立一个Trie树，Trie上的每一个结点有一个fail值，将所求串在Trie上比对。　　　　建立Trie树　　在每个模">
-<meta property="og:updated_time" content="2015-12-21T14:44:58.569Z">
+算法实现&quot;&amp;gt;算法实现　　步骤为：按照模式串建立一个Trie树，Trie上的每一个结点有一个fail值，将所求串在Trie上比对。　　　　建立Trie树　　在每个模式">
+<meta property="og:updated_time" content="2015-12-21T14:50:28.040Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AC自动机">
 <meta name="twitter:description" content="AC自动机&quot;&amp;gt;AC自动机
 　　AC自动机是用来求一个串中出现了多少个模式串的算法。
-
 fail数组&quot;&amp;gt;fail数组　　类比KMP中的next数组，即在Trie上，i点向上与fail[i]到根节点之前组成的字符串长度相同组成的字符串相等。
-算法实现&quot;&amp;gt;算法实现　　步骤为：按照模式串建立一个Trie树，Trie上的每一个结点有一个fail值，将所求串在Trie上比对。　　　　建立Trie树　　在每个模">
+算法实现&quot;&amp;gt;算法实现　　步骤为：按照模式串建立一个Trie树，Trie上的每一个结点有一个fail值，将所求串在Trie上比对。　　　　建立Trie树　　在每个模式">
   
     <link rel="alternative" href="/atom.xml" title="IdiotLB&#39;s Blog" type="application/atom+xml">
   
@@ -204,7 +201,6 @@ fail数组&quot;&amp;gt;fail数组　　类比KMP中的next数组，即在Trie�
       
         <h1 id="AC_u81EA_u52A8_u673A"><a href="#AC_u81EA_u52A8_u673A" class="headerlink" title="<strong>AC自动机</strong>"></a><strong>AC自动机</strong></h1><hr>
 <p>　　AC自动机是用来求一个串中出现了多少个模式串的算法。</p>
-<hr>
 <h3 id="fail_u6570_u7EC4"><a href="#fail_u6570_u7EC4" class="headerlink" title="<strong>fail数组</strong>"></a><strong>fail数组</strong></h3><p>　　类比KMP中的next数组，即在Trie上，i点向上与fail[i]到根节点之前组成的字符串长度相同组成的字符串相等。</p>
 <h3 id="u7B97_u6CD5_u5B9E_u73B0"><a href="#u7B97_u6CD5_u5B9E_u73B0" class="headerlink" title="<strong>算法实现</strong>"></a><strong>算法实现</strong></h3><p>　　步骤为：按照模式串建立一个Trie树，Trie上的每一个结点有一个fail值，将所求串在Trie上比对。<br>　　<br>　　<strong>建立Trie树</strong><br>　　在每个模式串的结尾的结点上记录一个count，并把它 + 1。</p>
 <p>　　<strong>如何求fail？</strong><br>　　root的fail为0，从根节点开始Bfs，检查当前点(设为i)的每一个子节点(设为代表的字母为j)，检查fail[i]是否存在一个为j的子节点，有则为fail[i]的j子节点，没有则为根节点。</p>
